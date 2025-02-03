@@ -1,0 +1,18 @@
+---
+title: "Assignment 3"
+author: "BEW"
+date: "2025-02-03"
+output: github_document
+---
+
+```{r}
+
+data <- data.frame(Candidate = c("Jeb", "Donald", "Ted", "Marco", "Carly", "Hillary", "Bernie"),
+                   ABC_Poll_Results = c(4, 62, 51, 21, 2, 14, 15),
+                   CBS_Poll_Results = c(12, 75, 43, 19, 1, 21, 19))
+
+data
+
+```
+
+
