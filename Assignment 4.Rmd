@@ -19,6 +19,9 @@ hist(data$BP,
      main = "Distribution of Blood Pressure",
      xlab = "Blood Pressure",
      col = "white")
+
+mean(data$BP)
+sd(data$BP)
 ```
 
 ```{r}
@@ -28,6 +31,7 @@ boxplot(BP ~ first_rating, data = data,
         ylab = "Blood Pressure",
         col = "white",
         names = c("Good", "Bad"))
+
 ```
 
 ```{r}

@@ -22,6 +22,18 @@ hist(data$BP,
 ![](Assignment-4_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
+mean(data$BP)
+```
+
+    ## [1] 102.6
+
+``` r
+sd(data$BP)
+```
+
+    ## [1] 56.14505
+
+``` r
 boxplot(BP ~ first_rating, data = data,
         main = "Blood Pressure by Initial MD Rating", 
         xlab = "Initial MD Rating",
