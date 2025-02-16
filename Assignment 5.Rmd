@@ -38,6 +38,8 @@ dim(S)
 det(S)
 
 #calculate inverse of new matrix#
-solve(S)
+S1 <- solve(S)
+
+round(S1%*%S, 10)
 ```
 
