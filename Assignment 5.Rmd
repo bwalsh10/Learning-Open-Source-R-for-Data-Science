@@ -1,0 +1,43 @@
+---
+title: "Assignment 5"
+author: "BEW"
+date: "2025-02-15"
+output: github_document
+---
+
+```{r}
+#create two matrices#
+A=matrix(1:100, nrow=10)
+B=matrix(1:1000, nrow=10)
+```
+
+
+```{r}
+#check if matrices are square#
+dim(A)
+dim(B)
+
+#compute determinants
+det(A)
+det(B)
+
+#inverse Matrix#
+solve(A)
+solve(B)
+```
+
+
+```{r}
+#create new matrix#
+S=matrix(2:5, nrow=2)
+
+#check if new matrix is square#
+dim(S)
+
+#compute determinants for new matrix#
+det(S)
+
+#calculate inverse of new matrix#
+solve(S)
+```
+
