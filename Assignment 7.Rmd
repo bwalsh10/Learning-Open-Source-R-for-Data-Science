@@ -1,0 +1,42 @@
+---
+title: "Assignment 7"
+author: "BEW"
+date: "2025-03-01"
+output: github_document
+---
+
+```{r}
+#Questions 1-3#
+data <- mtcars
+head(mtcars)
+list(mtcars)
+class(mtcars)
+
+print(mtcars)
+summary(mtcars)
+plot(mpg ~ hp, data = mtcars)
+
+is.object(data) & !isS4(data)
+isS4(data)
+```
+
+
+```{r}
+#Create an S3Object#
+
+s3 <- list(name = "Brendan", age = 25, GPA = 4.0)
+class(s3) <- "student"
+is.object(s3) & !isS4(s3)
+attributes(s3)
+
+#create an S4 Object#
+setClass("student", 
+         slots = list(name = "character", 
+                      age = "numeric", 
+                      GPA = "numeric"))
+
+s4 <- new("student", name = "Brendan", age = 25, GPA = 4.0)
+
+isS4(s4)
+```
+
