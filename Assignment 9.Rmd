@@ -1,0 +1,48 @@
+---
+title: "Assignment 9"
+author: "BEW"
+date: "2025-03-24"
+output: github_document
+---
+
+```{r}
+library(readr)
+library(ggplot2)
+library(lattice)
+```
+
+
+```{r}
+data <- read_csv("C:/Users/Brendan/Downloads/bac.csv")
+```
+
+```{r}
+plot(data$beers, data$bac, 
+     xlab = "Number of Beers",
+     ylab = "Blood Alcohol Concentration (BAC)",
+     main = "Relation Between Number of Beers and BAC",
+     pch = 16, col = "blue")
+
+model <- lm(bac ~ beers, data = data)
+abline(model, col = "red", lwd = 2)
+     
+```
+
+```{r}
+xyplot(bac ~ beers, data = data,
+       panel = function(x, y) {
+           panel.xyplot(x, y, pch = 16, col = "blue")  # Scatter plot
+           panel.lmline(x, y, col = "red")             # Regression line
+       })
+
+```
+
+```{r}
+ggplot(data, aes(x = beers, y = bac)) +
+  geom_point(color = "blue") +        # Scatter plot
+  geom_smooth(method = "lm", color = "red", se = FALSE) +  # Regression line
+  labs(x = "Number of Beers", y = "Blood Alcohol Concentration (BAC)", 
+       title = "Relation Between Number of Beers and BAC") +
+  theme_minimal()
+```
+
