@@ -1,0 +1,27 @@
+---
+title: "Assignment 8"
+output: html_document
+date: "2025-03-05"
+---
+
+```{r}
+#Step 1: Import Dataset
+data <- read.table("C:/Users/bew15/Downloads/Assignment 6 Dataset.txt", header = T, sep = ",")
+```
+
+```{r}
+#Step 2: Calculate Mean of Age and Grade Split by Sex
+library(plyr)
+data_up <- ddply(data, "Sex", transform, Grade.Average = mean(Grade))
+
+write.table(data_up, "Averages_by_Sex", sep = ",")
+```
+
+```{r}
+#Step 3: Only Include Names with Letter "I"
+
+data_i <- subset(data, grepl("[iI]", data$Name))
+
+write.table(data_i, "Names_with_I", sep = ",")
+```
+
