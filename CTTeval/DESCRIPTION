@@ -1,0 +1,13 @@
+Package: CTTeval
+Type: Package
+Title: Classical Test Theory Approach to Measurement Evaluation
+Version: 0.1.0
+Author: Brendan E. Walsh <bew15@usf.edu>
+Maintainer: Brendan E. Walsh <bew15@usf.edu>
+Description: This package applies Classical Test Theory and its associated
+    statistical tests and metrics to evaluate continuous measurement scales
+    with multiple items.
+Depends: psych
+License: CCO
+Encoding: UTF-8
+LazyData: true
