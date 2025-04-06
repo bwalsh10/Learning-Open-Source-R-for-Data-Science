@@ -7,7 +7,10 @@ Maintainer: Brendan E. Walsh <bew15@usf.edu>
 Description: This package applies Classical Test Theory and its associated
     statistical tests and metrics to evaluate continuous measurement scales
     with multiple items.
-Depends: psych
-License: CCO
+URL: https://github.com/bwalsh10/Learning-Open-Source-R-for-Data-Science/tree/main/CTTeval
+Imports: psych, tidyverse, knitr
+License: MIT
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = T)
+RoxygenNote: 7.3.2
