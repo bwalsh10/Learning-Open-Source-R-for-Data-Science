@@ -1,0 +1,53 @@
+---
+title: "Function Description"
+author: "BEW"
+date: "2025-04-30"
+output: html_document
+---
+#INTRODUCTION:
+
+The **CTTeval** package is great for anyone else who is just getting familiar with scale and item evaluation using Classical Test Theory. Note that the psych package allows researchers to access most of the statistics that the **CTTeval** package calculates; however, the **CTTeval** package combines the most important information into readable tables and actionable insights.#
+
+# PACKAGE IMPORTS
+
+It is important that users of this package load the following packages: 
+  -psych
+  -tidverse
+  -knitr
+
+#**ctt_eval()** function
+
+Scale-level and item-level evaluation can be complex and multi-faceted. The **ctt_eval()** function simplifies the process. The function can be applied to a data frame or matrix and it provides the following information in two tables: 
+
+  -Table 1
+    -Item Means
+    -Item Standard Deviations
+    -Item Skew
+    -Item Kurtosis
+    -Item Range
+    -Item Discrimination (or Difficulty)
+    -Alpha if Item is Deleted
+    -Item Quality
+  
+  -Table 2
+    -Scale Mean
+    -Scale Standard Deviation
+    -Scale Range
+    -Scale Alpha
+    -Scale Alpha Descriptor
+
+# HELPFUL TIPS
+  1.) Ensure you are only applying the function to the appropriate columns that correspond       to the items in your scale. 
+  2.) Consider utilizing the output from the **ctt_eval()** function iteratively to make        important decisions and evaluate their impact on key item-level and scale-level           statistics.
+
+# TWO MOST COMMON USES
+
+This function is most appropriate during early-stage scale development. It can help researchers pinpoint poorly performing items, strong items, difficult items, etc. 
+
+This function is also appropriate for scale evaluation as a precursor to primary statistical analyses. 
+
+
+
+
+
+  
