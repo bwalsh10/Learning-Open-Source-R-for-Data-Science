@@ -117,8 +117,6 @@ library(roxygen2)
 devtools::document()
 ```
 
-
-
 ```{r}
 #TESTING ctt_eval function using simulated data (100 participants completing a 10-item self-report scale)
 
